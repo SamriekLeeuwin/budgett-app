@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BudgetLife - Your Personal Budget Management App">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="/budget-app/src/assets/css/styles.css" as="style">
+    <link rel="stylesheet" href="/budget-app/src/assets/css/styles.css">
+    <title>BudgetLife - Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <h3>start your budget journey</h3>
+        <h2>Sign Up to BudgetLife</h2>
+        <div class="form-container">
+            <form method="POST" action="/signup" autocomplete="off" novalidate>
+                <div class="form-groups">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    <button type="submit">Sign Up</button>
+                    <div class="social-login">
+                        <div class="line">
+                        <h4>or sign up with</h4>
+                        </div>
+                        <div class="social-icons">
+                            <img src="/budget-app/src/assets/images/facebook.svg" alt="Sign up with Facebook">
+                            <img src="/budget-app/src/assets/images/google.svg" alt="Sign up with Google">
+                            <img src="/budget-app/src/assets/images/twitter.svg" alt="Sign up with Twitter">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/budget-app/dist/login.js"></script>
+</body>
+</html>
